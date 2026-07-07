@@ -1,0 +1,20 @@
+# Dependencias
+node_modules/
+
+# Archivos de registro/errores. Logs
+logs
+*.log
+npm-debug.log*
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# # Archivos de entorno (contraseñas y llaves). Variables de entorno (si las usas en el futuro)
+.env
+.env.local
+
+# Carpeta de producción (si usas TypeScript o frameworks)
+dist/
+build/
+
