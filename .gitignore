@@ -10,11 +10,11 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# # Archivos de entorno (contraseñas y llaves). Variables de entorno (si las usas en el futuro)
+# # Archivos de entorno (contraseñas y llaves). Variables de entorno  (por si es requerido usarlas en el futuro)
 .env
 .env.local
 
-# Carpeta de producción (si usas TypeScript o frameworks)
+# Carpeta de producción (En caso de que llegue a usarse TypeScript o frameworks)
 dist/
 build/
 
