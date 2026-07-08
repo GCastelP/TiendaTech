@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 
 // 2. Importar middlewares personalizados
 import { notFoundHandler } from './src/middlewares/notFound.js';
+import mainRoutes from './src/routes/index.routes.js';  // nueva importacion de rutas centralizadas
 
 // 3. Cargar variables de entorno
 dotenv.config();
@@ -25,6 +26,9 @@ app.get('/', (req, res) => {
         status: 'Servidor operativo'
     });
 });
+
+// Conectar las rutas centralizadas
+app.use(mainRoutes);   // nueva linea
 
 // 7. Middleware para rutas desconocidas (404) - Importado desde la capa de middlewares
 app.use(notFoundHandler);
